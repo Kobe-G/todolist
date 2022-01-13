@@ -4,5 +4,6 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: node -v
-      - run: docker -v
+      - run: docker build -t nginx-test .
+      - run: docker tag nginx-test registry.xilin.icu/nginx-test
+      - run: docker push registry.xilin.icu/nginx-test

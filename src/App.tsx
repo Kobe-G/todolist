@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      {"ci test"}
+      {"ci test "}
       <div>
         <label htmlFor="insertArea">输入内容</label>
         <input

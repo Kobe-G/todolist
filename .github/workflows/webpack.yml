@@ -4,6 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: docker build -t nginx-test .
+      - run: pwd
+      - run: docker build -f ./Dockerfile -t nginx-test .
       - run: docker tag nginx-test registry.xilin.icu/nginx-test
       - run: docker push registry.xilin.icu/nginx-test

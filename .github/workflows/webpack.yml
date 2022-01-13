@@ -4,8 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: pwd
-      - run: cat ./package.json
+      - run: mkdir gh
+      - run: mkdir ls
       - run: docker build -f ./Dockerfile -t nginx-test .
       - run: docker tag nginx-test registry.xilin.icu/nginx-test
       - run: docker push registry.xilin.icu/nginx-test

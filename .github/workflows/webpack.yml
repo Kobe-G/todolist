@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: pwd
-      - run: cat ./Dockerfile
+      - run: cat ./package.json
       - run: docker build -f ./Dockerfile -t nginx-test .
       - run: docker tag nginx-test registry.xilin.icu/nginx-test
       - run: docker push registry.xilin.icu/nginx-test

@@ -4,8 +4,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - run: git clone git@github.com:Kobe-G/todolist.git
-      - run: cd todolist
+      - uses: actions/checkout@master
+      - run: ls
       - run: docker build -f ./Dockerfile -t nginx-test .
       - run: docker tag nginx-test registry.xilin.icu/nginx-test
       - run: docker push registry.xilin.icu/nginx-test

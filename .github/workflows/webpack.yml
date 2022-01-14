@@ -6,6 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - run: ls
-      - run: docker build -f ./Dockerfile -t nginx-test .
-      - run: docker tag nginx-test registry.xilin.icu/nginx-test
-      - run: docker push registry.xilin.icu/nginx-test
+      - run: docker build -f ./Dockerfile -t nginx-test1 .
+      - run: docker tag nginx-test1 registry.xilin.icu/nginx-test1
+      - run: docker push registry.xilin.icu/nginx-test1

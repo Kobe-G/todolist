@@ -5,4 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: echo running on branch ${GITHUB_REF}
+      - run: docker build -f ./Dockerfile -t nginx-test .
+      - run: docker tag nginx-test registry.xilin.icu/nginx-test
+      - run: docker push registry.xilin.icu/nginx-test
+      - run: ssh root@1.14.98.90
+      - run: ZYailxy99
+      - run: ls
+      - run: docker pull registry.xilin.icu/nginx-test
+      - run: docker run -p 8083:80 -rm -d registry.xilin.icu/nginx-test

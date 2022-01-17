@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: appleboy/ssh-action@master
-      - run:
+      - run: echo ${{ secrets.SERVER_IP }}
       - with:
           host: ${{ secrets.SERVER_IP }}
           username: root

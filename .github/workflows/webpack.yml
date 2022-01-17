@@ -12,9 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: appleboy/ssh-action@master
-      - run: echo ${{ secrets.SERVER_IP }}
       - with:
           host: ${{ secrets.SERVER_IP }}
           username: root
           key: ${{ secrets.SERVER_SSH_PRIV_KEY }}
           script: docker pull registry.xilin.icu/nginx-test && docker run -p 8083:80 -rm -d registry.xilin.icu/nginx-test
+      - run: echo ${{ secrets.SERVER_IP }}

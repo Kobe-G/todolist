@@ -5,10 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - run: docker build -f ./Dockerfile -t nginx-test .
-      - run: docker tag nginx-test registry.xilin.icu/nginx-test
-      - run: docker push registry.xilin.icu/nginx-test
-      - run: ssh root@1.14.98.90
-      - run: ls
-      - run: docker pull registry.xilin.icu/nginx-test
-      - run: docker run -p 8083:80 -rm -d registry.xilin.icu/nginx-test
+      # - run: docker build -f ./Dockerfile -t nginx-test .
+      # - run: docker tag nginx-test registry.xilin.icu/nginx-test
+      # - run: docker push registry.xilin.icu/nginx-test
+      - run: echo ${{secrets.SERVER_SSH_PRIV_KEY}}
+      - run: echo ${{secrets.SERVER_IP}}
+      # - run: docker pull registry.xilin.icu/nginx-test
+      # - run: docker run -p 8083:80 -rm -d registry.xilin.icu/nginx-test

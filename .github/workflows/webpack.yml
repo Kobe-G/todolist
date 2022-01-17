@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  ci/cd:
+  ci_cd:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master

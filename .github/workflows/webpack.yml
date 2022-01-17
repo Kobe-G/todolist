@@ -14,4 +14,4 @@ jobs:
           host: ${{ secrets.SERVER_IP }}
           username: root
           key: ${{ secrets.SERVER_SSH_PRIV_KEY }}
-          script: docker pull registry.xilin.icu/nginx-test && docker run -p 8083:80 --rm -d registry.xilin.icu/nginx-test
+          script: docker pull registry.xilin.icu/nginx-test && docker rm $(docker ps -aq) -f && docker run -p 8083:80 --rm -d registry.xilin.icu/nginx-test

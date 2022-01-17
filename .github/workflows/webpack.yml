@@ -5,9 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      # - run: docker build -f ./Dockerfile -t nginx-test .
-      # - run: docker tag nginx-test registry.xilin.icu/nginx-test
-      # - run: docker push registry.xilin.icu/nginx-test
+      - run: docker build -f ./Dockerfile -t nginx-test .
+      - run: docker tag nginx-test registry.xilin.icu/nginx-test
+      - run: docker push registry.xilin.icu/nginx-test
       - name: deploy
         uses: appleboy/ssh-action@master
         with:

@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      {"ci test on remote web !"}
+      {"ci/cd test on remote web"}
       <div>
         <label htmlFor="insertArea">输入内容</label>
         <input

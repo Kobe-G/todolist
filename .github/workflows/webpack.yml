@@ -15,4 +15,4 @@ jobs:
           username: root
           key: ${{ secrets.SERVER_SSH_PRIV_KEY }}
           # script: docker pull registry.xilin.icu/nginx-test && docker rm $(docker ps -aq) -f && docker run -p 8083:80 --rm -d registry.xilin.icu/nginx-test
-          script: docker-compose pull && docker-compose restart nginx-test
+          script: docker-compose pull && docker-compose up -d nginx-test

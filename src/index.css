@@ -1,0 +1,64 @@
+.pic{
+    width: 125px;
+    height: 250px;
+    transition: all 1s ease-out;
+    float: left;
+}
+.bg1{
+    background: url('./QQ20220128-0.jpg') 0% 0%;
+    background-size:500px 500px;
+}
+.bg2{
+    background: url('./QQ20220128-0.jpg') 33% 0%;
+    background-size:500px 500px;
+}
+.bg3{
+    background: url('./QQ20220128-0.jpg') 66% 0%;
+    background-size:500px 500px;
+}
+.bg4{
+    background: url('./QQ20220128-0.jpg') 100% 0%;
+    background-size:500px 500px;
+}
+.bg5{
+    background: url('./QQ20220128-0.jpg') 0% 100%;
+    background-size:500px 500px;
+}
+.bg6{
+    background: url('./QQ20220128-0.jpg') 33% 100%;
+    background-size:500px 500px;
+}
+.bg7{
+    background: url('./QQ20220128-0.jpg') 66% 100%;
+    background-size:500px 500px;
+}
+.bg8{
+    background: url('./QQ20220128-0.jpg') 100% 100%;
+    background-size:500px 500px;
+}
+
+.ani1{
+    transform: rotate(45deg) translateX(-1000px);
+}
+.ani2{
+    transform: rotate(115deg) translateY(500px);
+}
+.ani3{
+    transform: rotate(163deg) translateX(600px);
+}
+.ani4{
+    transform: translateX(1000px);
+}
+.ani5{
+    transform: rotate(360deg) translateX(-200px);
+}
+.ani6{
+    transform: translateY(1000px);
+}
+.ani7{
+    transform: rotate(45deg) translateX(-1000px);
+}
+.ani8{
+    transform: rotate(45deg) translateX(-1000px);
+}
+    
